@@ -1,13 +1,124 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+header{
+  display: flex;
+  padding: 25px 10%;
+  justify-content: space-between;
+  align-items: center;
+  width: 99vw;
+  position: relative;
+}
+.headerNav {
+  flex: 1;
+  text-align: right;
+}
+.basketIcon{
+  cursor: pointer;
+  transition:color,  transform 500ms ease;
+  height: 50px;
+  width: 20px;
+}
+.basketIcon:hover , .basketIcon.active{
+  color: rgba(222, 48, 68, 0.76);
+  transform: scale(1.5);
+}
+.shopCart{
+  position: absolute;
+  background: #e0a317;
+  width: 400px;
+  height: 300px;
+  right: 10%;
+  top: 80%;
+  z-index: 2;
+  -webkit-box-shadow: 4px 4px 8px 3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 3px rgba(34, 60, 80, 0.2);
+   box-shadow: 4px 4px 8px 3px rgba(34, 60, 80, 0.2);
+}
+header ul{
+  list-style: none;
+}
+header li{
+  display: inline;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: opacity 500ms ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header li:hover, header li:focus{
+  opacity: 50%;
 }
+
+main{
+  height: 700px;
+  margin:100px;
+  background: url('./img/storeBg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+
+}
+main:after{
+  content: 'Лучшие пива России и мира!';
+  color: #fff;
+  font-size: 50px;
+  font-family: inherit;
+  position: absolute;
+  top: 22%;
+  left: 5%;
+  width: 400px;
+}
+main:before{
+  content: 'Забирай скорей';
+  color: red;
+  font-size: 25px;
+  position: absolute;
+  top: 52%;
+  left: 5%;
+}
+footer{
+  text-align: center;
+}
+.store{
+  display: flex;
+  margin:0 10% 10% 10%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.store h1{
+    text-align: center;
+    text-decoration: underline;
+    color: teal;
+}
+.storeItem {
+  width: 300px;
+  height: 250px;
+  border-radius: 30px;
+  padding:25px;
+  margin:40px;
+  box-shadow: 0 0 5px 2px black;
+}
+.storeItem h2 , h3{
+  margin-bottom:10px;
+}
+.storeItem h3{
+  color: #e0a317;
+}
+.storeItem button{
+  margin-top:20px;
+  padding:10px;
+  border-radius: 10px;
+  border: 1px solid #e0a317;
+  transition: all 500ms;
+}
+.storeItem button:hover , :focus{
+  background: #e0a317;
+}
+

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StoreItem = ({item}) => {
+const StoreItem = ({item} , {basket}) => {
     return (
         <div className='storeItem'>
             <div className='storeItem__block'>
