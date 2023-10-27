@@ -1,10 +1,15 @@
 import React from 'react';
 import StoreItem from "./StoreItem";
-const Store = ({item}) => {
+
+const Store = ({product , addToCart}) => {
     return (
         <div className='store'>
-            {item.map((item)=>
-            <StoreItem item={item} key={item.id}/>
+            {product.map((item)=>
+                <StoreItem
+                    item={item}
+                    key={item.id}
+                    addToCart={addToCart}
+                />
             )}
         </div>
     );

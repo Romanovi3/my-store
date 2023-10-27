@@ -1,10 +1,15 @@
 import React, {useState} from 'react';
 import { PiBasketLight } from "react-icons/pi";
+import Basket from "./Basket";
 
 
-const Header = () => {
+
+
+const Header = ({cartItems , setCartItems, product, setProduct}) => {
 
     let [cartOpen , setCartOpen] = useState(false)
+
+
     return (
         <header>
             <div className="headerLogo">
@@ -18,17 +23,20 @@ const Header = () => {
                 </ul>
             </div>
             <PiBasketLight
-                className='basketIcon'
                 onClick={()=> setCartOpen(cartOpen = !cartOpen)}
                 className={`basketIcon ${cartOpen && 'active'}`}
             />
             {cartOpen && (
-                <div className='shopCart'>
-
-                </div>
+                    <Basket
+                    cartItems={cartItems}
+                    setCartItems={setCartItems}
+                    product={product}
+                    setProduct={setProduct}
+                    key={product.id}
+                    />
             )}
         </header>
     );
 };
 
-export default Header;
+    export default Header;
