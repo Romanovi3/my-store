@@ -3,7 +3,7 @@ import StoreItem from "./StoreItem";
 
 const Store = ({product , addToCart}) => {
     return (
-        <div className='store'>
+        <div className='store' id='store'>
             {product.map((item)=>
                 <StoreItem
                     item={item}

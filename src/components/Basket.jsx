@@ -35,31 +35,31 @@ const Basket = ({cartItems , setCartItems}) => {
             {cartItems.length > 0 && cartItems.map((item)=>(
                 <div key={item.id}>
                     <div className='cartBlock'>
-                    <div>
-                        <h2>{item.title} - {item.quantity}шт.</h2>
-                        <p>{item.price} р.</p>
-                    </div>
+                        <div>
+                            <h2>{item.title} - {item.quantity}шт.</h2>
+                            <p>{item.price} р.</p>
+                        </div>
                         <div className='cartBtns'>
-                        <button onClick={()=> handleIncrease(item)}>+</button>
-                        <button onClick={()=>handleDecrease(item)}>-</button>
-                        <FaRegTrashCan
-                            className='trash'
-                            onClick={()=>removeFromCart(item)}
-                        />
+                            <button onClick={()=> handleIncrease(item)}>+</button>
+                            <button onClick={()=>handleDecrease(item)}>-</button>
+                            <FaRegTrashCan
+                                className='trash'
+                                onClick={()=>removeFromCart(item)}
+                            />
                         </div>
                     </div>
                 </div>
-                ))}
-                {cartItems.length > 0 && (
+            ))}
+            {cartItems.length > 0 && (
                 <div>
                     <p className='totalCart'>Общая сумма: {calculateTotal()}р</p>
                 </div>
             )}
         </div>
 
-            );
+    );
 
 
-        };
+};
 
 export default Basket;

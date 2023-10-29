@@ -4,7 +4,7 @@ const Footer = () => {
 
     const dataYear = new Date()
     return (
-        <footer>
+        <footer id='contact'>
             <h3>All rights reserved &copy;</h3>
             <div>
                 {dataYear.getFullYear()} г.

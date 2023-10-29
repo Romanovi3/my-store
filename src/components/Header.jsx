@@ -17,9 +17,9 @@ const Header = ({cartItems , setCartItems, product, setProduct}) => {
             </div>
             <div className="headerNav">
                 <ul>
-                    <li>Contact</li>
-                    <li>Store</li>
-                    <li>About us</li>
+                    <li><a href="#store">Store</a></li>
+                    <li><a href="#aboutus">About us</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <PiBasketLight
@@ -27,16 +27,16 @@ const Header = ({cartItems , setCartItems, product, setProduct}) => {
                 className={`basketIcon ${cartOpen && 'active'}`}
             />
             {cartOpen && (
-                    <Basket
+                <Basket
                     cartItems={cartItems}
                     setCartItems={setCartItems}
                     product={product}
                     setProduct={setProduct}
                     key={product.id}
-                    />
+                />
             )}
         </header>
     );
 };
 
-    export default Header;
+export default Header;

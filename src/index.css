@@ -55,20 +55,22 @@ header li{
   display: inline;
   margin-right: 20px;
   cursor: pointer;
-  transition: all 500ms ease;
+  transition: all 300ms ease;
   font-size: 20px;
   border: none;
 }
 
 header li:hover, header li:focus{
-  opacity: 60%;
-  border-bottom: 1px solid rgba(222, 48, 68, 0.76);
+  opacity: 50%;
 }
-
+header a:visited , :focus , :active , :-webkit-any-link{
+  text-decoration: none;
+  color:inherit;
+}
 main{
   height: 700px;
   margin:150px 100px;
-  background: url('./img/storeBg.jpg') no-repeat center center;
+  background: url('../public/img/storeBg.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
 
@@ -207,6 +209,38 @@ footer{
   color: #ef1010;
   text-shadow: 1px 1px black;
   margin:15%;
+}
+.aboutUs{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin:10%;
+  padding:30px;
+  background-color: #e0a317;
+  color: #fff;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 28px 19px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0 0 28px 19px rgba(34, 60, 80, 0.2);
+   box-shadow: 0 0 28px 19px rgba(34, 60, 80, 0.2);
+}
+.aboutUs__info{
+  width: 50%;
+  margin-right: 5%;
+}
+.aboutUs__info h1{
+  margin: 10px 0 25px 0   ;
+  color: #000;
+  font-size: 30px;
+}
+.aboutUs__info p{
+  font-size: 20px;
+}
+.aboutUs__pic{
+  width: 50%;
+}
+.aboutUs__pic img{
+  width: 100%;
+  border-radius: 25px;
 }
 
 

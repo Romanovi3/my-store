@@ -4,6 +4,8 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import React, {useState, useEffect} from "react";
 import Store from './components/Store'
+import AboutUs from "./components/About-us";
+
 
 
 
@@ -56,6 +58,7 @@ function App() {
           product={product}
           addToCart={addToCart}
         />
+        <AboutUs/>
         <Footer/>
 
     </div>
