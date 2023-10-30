@@ -3,7 +3,7 @@ import { FaRegTrashCan } from "react-icons/fa6";
 
 const Basket = ({cartItems , setCartItems}) => {
 
-    //разобраться со сторажем, выкидывает ошибки
+    //пофиксить асинхронность сохранения в хранилище
 
     useEffect(() => {
         const savedCart = localStorage.getItem('cartItems');
@@ -11,11 +11,13 @@ const Basket = ({cartItems , setCartItems}) => {
             setCartItems(JSON.parse(savedCart))
         }
     }, []);
-    const saveToStorage = ({cartItems}) =>{
-        localStorage.setItem('cartItems' , JSON.stringify({cartItems}))
+    const saveToStorage = (cartItems) =>{
+        localStorage.setItem('cartItems' , JSON.stringify(cartItems))
     }
+
     const removeFromCart = (itemToRemove) => {
-        setCartItems(cartItems.filter((item) => item !== itemToRemove))};
+        setCartItems(cartItems.filter((item) => item !== itemToRemove))
+    };
     const calculateTotal = () => {
         return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);}
     const handleIncrease = (item) =>{
@@ -26,11 +28,13 @@ const Basket = ({cartItems , setCartItems}) => {
                 return el
             }
         ))
+        setTimeout(()=>saveToStorage(cartItems) , 300)
     }
     const handleDecrease = (item) =>{
         setCartItems(cartItems.map((el)=> {
                 if (item.id === el.id){
                     return {...el, quantity: el.quantity - 1}
+
                 }
                 return el
             }

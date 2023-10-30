@@ -222,7 +222,7 @@ footer{
   margin:10%;
   padding:5% 2%;
   background-color: #e0a317;
-  color: #fff;
+  color: #000;
   border-radius: 25px;
   -webkit-box-shadow: 0 0 28px 19px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0 0 28px 19px rgba(34, 60, 80, 0.2);
@@ -242,13 +242,13 @@ footer{
   flex-direction: row;
 }
 .aboutUs hr{
-  border:1px solid rgba(222, 48, 68, 0.76);
+  border:1px solid teal;
   width: 70%;
 }
 .aboutUs__info h1{
   margin: 10px 0 25px 0   ;
-  color: rgba(222, 48, 68, 0.76);
-  font-size: 30px;
+  color: teal;
+  font-size: 32px;
   text-align: center;
 }
 .aboutUs__info p{
