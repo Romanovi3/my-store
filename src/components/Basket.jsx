@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import { FaRegTrashCan } from "react-icons/fa6";
 
+
 const Basket = ({cartItems , setCartItems}) => {
 
     //пофиксить асинхронность сохранения в хранилище
@@ -11,6 +12,11 @@ const Basket = ({cartItems , setCartItems}) => {
             setCartItems(JSON.parse(savedCart))
         }
     }, []);
+
+    useEffect(() => {
+        saveToStorage(cartItems);
+    }, [cartItems])
+
     const saveToStorage = (cartItems) =>{
         localStorage.setItem('cartItems' , JSON.stringify(cartItems))
     }
@@ -28,13 +34,11 @@ const Basket = ({cartItems , setCartItems}) => {
                 return el
             }
         ))
-        setTimeout(()=>saveToStorage(cartItems) , 300)
     }
     const handleDecrease = (item) =>{
         setCartItems(cartItems.map((el)=> {
                 if (item.id === el.id){
                     return {...el, quantity: el.quantity - 1}
-
                 }
                 return el
             }
