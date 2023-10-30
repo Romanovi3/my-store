@@ -13,7 +13,7 @@ const Header = ({cartItems , setCartItems, product, setProduct}) => {
     return (
         <header>
             <div className="headerLogo">
-                <h1>Dom Pivka</h1>
+                <h1>Domik Pivki</h1>
             </div>
             <div className="headerNav">
                 <ul>

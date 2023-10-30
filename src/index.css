@@ -70,31 +70,34 @@ header a:visited , :focus , :active , :-webkit-any-link{
 main{
   height: 700px;
   margin:150px 100px;
-  background: url('../public/img/storeBg.jpg') no-repeat center center;
+  /*background: url('../public/img/storeBg.jpg') no-repeat center center;*/
+  background: url('../public/img/beerbg.jpg') no-repeat center center;
+
   background-size: cover;
   position: relative;
 
 }
 main:after{
-  content: 'Лучшие пива России и мира!';
-  color: #fff;
-  font-size: 50px;
+  content: 'Лучшие пива млечного пути!';
+  color: #e0a317;
+  font-size: 70px;
   font-family: inherit;
   position: absolute;
-  top: 22%;
-  left: 5%;
-  width: 400px;
+  top: 55%;
+  left: 3%;
+  width: 65%;
 }
 main:before{
   content: 'Забирай скорей';
-  color: red;
-  font-size: 25px;
+  color: #fff;
+  font-size: 40px;
   position: absolute;
-  top: 52%;
-  left: 5%;
+  top: 68%;
+  left: 10%;
 }
 footer{
   text-align: center;
+  margin-bottom: 20px;
 }
 .store{
   display: flex;
@@ -117,7 +120,7 @@ footer{
   margin:40px;
   box-shadow: 0 0 5px 2px black;
 }
-.storeItem h2 , h3{
+.storeItem h2 , .storeItem h3{
   margin-bottom:10px;
 }
 .storeItem h3{
@@ -131,7 +134,7 @@ footer{
   transition: all 500ms;
   background-color: #fff;
 }
-.storeItem button:hover , :focus{
+.storeItem button:hover{
   transform: scale(1.05);
   background: #e0a317;
 }
@@ -154,6 +157,7 @@ footer{
 }
 .cartBlock h2{
   display: block;
+  text-align: left;
 }
 .cartBlock p{
   text-align: left;
@@ -212,10 +216,11 @@ footer{
 }
 .aboutUs{
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin:10%;
-  padding:30px;
+  padding:5% 2%;
   background-color: #e0a317;
   color: #fff;
   border-radius: 25px;
@@ -224,16 +229,32 @@ footer{
    box-shadow: 0 0 28px 19px rgba(34, 60, 80, 0.2);
 }
 .aboutUs__info{
-  width: 50%;
-  margin-right: 5%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 10px;
+}
+.aboutUs__info_block{
+  width: 100%;
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+}
+.aboutUs hr{
+  border:1px solid rgba(222, 48, 68, 0.76);
+  width: 70%;
 }
 .aboutUs__info h1{
   margin: 10px 0 25px 0   ;
-  color: #000;
+  color: rgba(222, 48, 68, 0.76);
   font-size: 30px;
+  text-align: center;
 }
 .aboutUs__info p{
-  font-size: 20px;
+  font-size: 30px;
+  width:65%;
+  margin: 15px;
 }
 .aboutUs__pic{
   width: 50%;
@@ -241,6 +262,18 @@ footer{
 .aboutUs__pic img{
   width: 100%;
   border-radius: 25px;
+}
+.contact h3{
+  margin: 0;
+}
+.contact__icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__icons p {
+  display: inline;
+  margin:5px 15px 5px 5px;
 }
 
 

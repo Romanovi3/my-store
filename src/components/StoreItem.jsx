@@ -4,8 +4,8 @@ const StoreItem = ({addToCart, item }) => {
 
     return (
 
-        <div className='storeItem'>
-            <div className='storeItem__block'>
+        <div className='storeItem' id='store'>
+            <div className='storeItem__block' >
                 <h2>{item.id}. {item.title}</h2>
                 <h3>vsego za {item.price}р</h3>
                 <p>{item.description}</p>

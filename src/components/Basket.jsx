@@ -1,8 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { FaRegTrashCan } from "react-icons/fa6";
 
 const Basket = ({cartItems , setCartItems}) => {
 
+    //разобраться со сторажем, выкидывает ошибки
+
+    useEffect(() => {
+        const savedCart = localStorage.getItem('cartItems');
+        if (savedCart){
+            setCartItems(JSON.parse(savedCart))
+        }
+    }, []);
+    const saveToStorage = ({cartItems}) =>{
+        localStorage.setItem('cartItems' , JSON.stringify({cartItems}))
+    }
     const removeFromCart = (itemToRemove) => {
         setCartItems(cartItems.filter((item) => item !== itemToRemove))};
     const calculateTotal = () => {
@@ -27,7 +38,6 @@ const Basket = ({cartItems , setCartItems}) => {
         if ( item.quantity === 1){
             removeFromCart(item)
         }
-        return item.quantity = 1
     }
     return (
         <div className='shopCart'>
@@ -52,6 +62,7 @@ const Basket = ({cartItems , setCartItems}) => {
             ))}
             {cartItems.length > 0 && (
                 <div>
+                    <button onClick={()=>saveToStorage(cartItems)}>save cart</button>
                     <p className='totalCart'>Общая сумма: {calculateTotal()}р</p>
                 </div>
             )}
