@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import { PiBasketLight } from "react-icons/pi";
 import Basket from "./Basket";
 
@@ -8,9 +8,6 @@ import Basket from "./Basket";
 const Header = ({cartItems , setCartItems, product, setProduct}) => {
 
     let [cartOpen , setCartOpen] = useState(false)
-
-
-
 
 
     return (

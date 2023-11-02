@@ -1,25 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { FaRegTrashCan } from "react-icons/fa6";
-
 
 const Basket = ({cartItems , setCartItems}) => {
 
-    //пофиксить асинхронность сохранения в хранилище
-
-    useEffect(() => {
-        const savedCart = localStorage.getItem('cartItems');
-        if (savedCart){
-            setCartItems(JSON.parse(savedCart))
-        }
-    }, []);
-
-    useEffect(() => {
-        saveToStorage(cartItems);
-    }, [cartItems])
-
-    const saveToStorage = (cartItems) =>{
-        localStorage.setItem('cartItems' , JSON.stringify(cartItems))
-    }
 
     const removeFromCart = (itemToRemove) => {
         setCartItems(cartItems.filter((item) => item !== itemToRemove))
@@ -39,6 +22,7 @@ const Basket = ({cartItems , setCartItems}) => {
         setCartItems(cartItems.map((el)=> {
                 if (item.id === el.id){
                     return {...el, quantity: el.quantity - 1}
+
                 }
                 return el
             }
@@ -47,6 +31,7 @@ const Basket = ({cartItems , setCartItems}) => {
             removeFromCart(item)
         }
     }
+
     return (
         <div className='shopCart'>
             {cartItems.length === 0 && <p className='emptyCart'>Your cart is empty</p>}
@@ -70,7 +55,6 @@ const Basket = ({cartItems , setCartItems}) => {
             ))}
             {cartItems.length > 0 && (
                 <div>
-                    <button onClick={()=>saveToStorage(cartItems)}>save cart</button>
                     <p className='totalCart'>Общая сумма: {calculateTotal()}р</p>
                 </div>
             )}
