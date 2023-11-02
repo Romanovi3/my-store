@@ -2,13 +2,11 @@ import React from 'react';
 
 const StoreItem = ({addToCart, item}) => {
 
-
-
     return (
 
         <div className='storeItem'>
-            <div>
-                {/*<img src={'../cardImg/' + {item.img}} alt={item.img}/>*/}
+            <div className='imgBlock'>
+                <img src={'./img/cardImg/' + item.img} alt={item.img}/>
             </div>
             <div className='storeItem__block' >
                 <h2>{item.title}</h2>

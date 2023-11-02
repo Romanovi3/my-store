@@ -70,7 +70,7 @@ function App() {
       quantity: 1,
       category: 'strong',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      img: 'strong.png'
+      img: 'vodka.png'
     },
     { id: 8,
       title: 'Подводочка',
@@ -78,7 +78,7 @@ function App() {
       quantity: 1,
       category: 'strong',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      img: 'strong.png'
+      img: 'vodka.png'
     },
     { id: 9,
       title: 'Пивасик',
@@ -94,7 +94,7 @@ function App() {
       quantity: 1,
       category: 'strong',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      img: 'strong.png'
+      img: 'vodka.png'
     },
     { id: 11,
       title: 'Винцо',
