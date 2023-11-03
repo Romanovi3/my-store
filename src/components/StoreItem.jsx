@@ -1,12 +1,16 @@
 import React from 'react';
 
-const StoreItem = ({addToCart, item}) => {
+const StoreItem = ({addToCart, item, showModal}) => {
 
     return (
 
         <div className='storeItem'>
             <div className='imgBlock'>
-                <img src={'./img/cardImg/' + item.img} alt={item.img}/>
+                <img
+                    src={'./img/cardImg/' + item.img}
+                    alt={item.img}
+                    onClick={()=>showModal()}
+                />
             </div>
             <div className='storeItem__block' >
                 <h2>{item.title}</h2>

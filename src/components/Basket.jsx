@@ -22,7 +22,6 @@ const Basket = ({cartItems , setCartItems}) => {
         setCartItems(cartItems.map((el)=> {
                 if (item.id === el.id){
                     return {...el, quantity: el.quantity - 1}
-
                 }
                 return el
             }
