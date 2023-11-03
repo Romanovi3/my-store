@@ -1,13 +1,19 @@
 import React from 'react';
 
-const ModalProduct = ({showModal}) => {
+const ModalProduct = ({showModal, modalItem, addToCart}) => {
     return (
         <div className='modalProduct'>
-            <button onClick={()=> showModal()}>X</button>
             <div className='modalBlock'>
-                <h3>popka</h3>
-                <h2>piska</h2>
-
+                <div className='modalBlock__imgSection'>
+                    <img src={'./img/cardImg/' + modalItem.img}
+                         alt={modalItem.img}/>
+                </div>
+                <div className='modalBlock__info'>
+                    <h2>{modalItem.title}</h2>
+                    <p>{modalItem.description}</p>
+                    <button onClick={()=>addToCart(modalItem)}>Круто! Беру.</button>
+                </div>
+                <button className='xBtn' onClick={()=> showModal()}>Х</button>
             </div>
         </div>
     );

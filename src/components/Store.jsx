@@ -3,15 +3,17 @@ import StoreItem from "./StoreItem";
 import Categories from "./Categories";
 import ModalProduct from "./ModalProduct";
 
+
 const Store = ({product , addToCart, cartItems}) => {
 
     const [currentProduct, setCurrentProduct] = useState(product)
     let [showFull, setShowFull] = useState(false)
-    const showModal =()=>{
+    let [modalItem, setModalItem] = useState({})
+
+    const showModal =(item)=>{
+        setModalItem(modalItem = item)
         setShowFull( showFull = !showFull)
     }
-
-
         const filterProduct =(category)=>{
             setCurrentProduct(
                  product.filter(el=>el.category === category)
@@ -33,6 +35,8 @@ const Store = ({product , addToCart, cartItems}) => {
             </div>
             {showFull && <ModalProduct
                 showModal={showModal}
+                modalItem={modalItem}
+                addToCart={addToCart}
             />}
             <div className='store'>
                 {currentProduct.map((item)=>
@@ -42,6 +46,7 @@ const Store = ({product , addToCart, cartItems}) => {
                         addToCart={addToCart}
                         cartItems={cartItems}
                         showModal={showModal}
+
                     />
                 )}
             </div>

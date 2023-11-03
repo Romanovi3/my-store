@@ -9,7 +9,7 @@ const StoreItem = ({addToCart, item, showModal}) => {
                 <img
                     src={'./img/cardImg/' + item.img}
                     alt={item.img}
-                    onClick={()=>showModal()}
+                    onClick={()=>showModal(item)}
                 />
             </div>
             <div className='storeItem__block' >

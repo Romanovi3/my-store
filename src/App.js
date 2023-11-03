@@ -21,7 +21,7 @@ function App() {
       price: 250,
       quantity: 1,
       category: 'light',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       img: 'light.png'
     },
     { id: 2,
@@ -29,7 +29,7 @@ function App() {
       price: 300,
       quantity: 1,
       category: 'dark',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       img: 'dark.png'
     },
     { id: 3,
@@ -37,7 +37,7 @@ function App() {
       price: 500,
       quantity: 1,
       category: 'dark',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       img: 'dark.png'
     },
     { id: 4,
@@ -45,7 +45,7 @@ function App() {
       price: 420,
       quantity: 1,
       category: 'light',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       img: 'light.png'
     },
     { id: 5,
@@ -53,7 +53,7 @@ function App() {
       price: 100,
       quantity: 1,
       category: 'light',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       img: 'light.png'
     },
     { id: 6,
@@ -61,7 +61,7 @@ function App() {
       price: 250,
       quantity: 1,
       category: 'light',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       img: 'light.png'
     },
     { id: 7,
@@ -69,7 +69,7 @@ function App() {
       price: 260,
       quantity: 1,
       category: 'strong',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       img: 'vodka.png'
     },
     { id: 8,
@@ -77,7 +77,7 @@ function App() {
       price: 200,
       quantity: 1,
       category: 'strong',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       img: 'vodka.png'
     },
     { id: 9,
@@ -85,7 +85,7 @@ function App() {
       price: 240,
       quantity: 1,
       category: 'light',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       img: 'light.png'
     },
     { id: 10,
@@ -93,7 +93,7 @@ function App() {
       price: 200,
       quantity: 1,
       category: 'strong',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       img: 'vodka.png'
     },
     { id: 11,
@@ -101,7 +101,7 @@ function App() {
       price: 1200,
       quantity: 1,
       category: 'wine',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       img: 'wine.png'
     },
     { id: 12,
@@ -109,7 +109,7 @@ function App() {
       price: 500,
       quantity: 1,
       category: 'dark',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       img: 'dark.png'
     }])
 
