@@ -5,12 +5,14 @@ const ModalProduct = ({showModal, modalItem, addToCart}) => {
         <div className='modalProduct'>
             <div className='modalBlock'>
                 <div className='modalBlock__imgSection'>
-                    <img src={'./img/cardImg/' + modalItem.img}
+                    <img src={modalItem.image_url}
                          alt={modalItem.img}/>
                 </div>
                 <div className='modalBlock__info'>
-                    <h2>{modalItem.title}</h2>
-                    <p>{modalItem.description}</p>
+                    <h2>{modalItem.name} - {modalItem.ibu}$</h2>
+                    <h3>{modalItem.description}</h3>
+                    <h4>@{modalItem.contributed_by} - </h4>
+                    <p className='modalBlock__tips'>"{modalItem.brewers_tips}"</p>
                     <button onClick={()=>addToCart(modalItem)}>Круто! Беру.</button>
                 </div>
                 <button className='xBtn' onClick={()=> showModal()}>Х</button>

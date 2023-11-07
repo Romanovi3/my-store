@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import StoreItem from "./StoreItem";
 import Categories from "./Categories";
 import ModalProduct from "./ModalProduct";
@@ -10,6 +10,10 @@ const Store = ({product , addToCart, cartItems}) => {
     let [showFull, setShowFull] = useState(false)
     let [modalItem, setModalItem] = useState({})
 
+    useEffect(() => {
+        setCurrentProduct(product)
+        console.log (product)
+    }, [product]);
     const showModal =(item)=>{
         setModalItem(modalItem = item)
         setShowFull( showFull = !showFull)
@@ -46,7 +50,6 @@ const Store = ({product , addToCart, cartItems}) => {
                         addToCart={addToCart}
                         cartItems={cartItems}
                         showModal={showModal}
-
                     />
                 )}
             </div>

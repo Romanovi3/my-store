@@ -7,8 +7,9 @@ const Basket = ({cartItems , setCartItems}) => {
     const removeFromCart = (itemToRemove) => {
         setCartItems(cartItems.filter((item) => item !== itemToRemove))
     };
+
     const calculateTotal = () => {
-        return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);}
+        return cartItems.reduce((total, item) => total + item.ibu * item.quantity, 0);}
     const handleIncrease = (item) =>{
         setCartItems(cartItems.map((el)=> {
                 if (item.id === el.id){
@@ -38,8 +39,8 @@ const Basket = ({cartItems , setCartItems}) => {
                 <div key={item.id}>
                     <div className='cartBlock'>
                         <div>
-                            <h2>{item.title} - {item.quantity}шт.</h2>
-                            <p>{item.price} р.</p>
+                            <h2>{item.name} - {item.quantity}шт.</h2>
+                            <p>{item.ibu} $.</p>
                         </div>
                         <div className='cartBtns'>
                             <button onClick={()=> handleIncrease(item)}>+</button>
@@ -54,7 +55,7 @@ const Basket = ({cartItems , setCartItems}) => {
             ))}
             {cartItems.length > 0 && (
                 <div>
-                    <p className='totalCart'>Общая сумма: {calculateTotal()}р</p>
+                    <p className='totalCart'>Общая сумма: {calculateTotal()}$</p>
                 </div>
             )}
         </div>

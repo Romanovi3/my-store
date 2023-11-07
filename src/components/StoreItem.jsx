@@ -7,14 +7,14 @@ const StoreItem = ({addToCart, item, showModal}) => {
         <div className='storeItem'>
             <div className='imgBlock'>
                 <img
-                    src={'./img/cardImg/' + item.img}
-                    alt={item.img}
+                    src={item.image_url}
+                    alt={item.image_url}
                     onClick={()=>showModal(item)}
                 />
             </div>
             <div className='storeItem__block' >
-                <h2>{item.title}</h2>
-                <h3>vsego za {item.price}р</h3>
+                <h2>{item.name}</h2>
+                <h3>{item.abv} abv , {item.ph} ph - {item.ibu}$</h3>
                 <p>{item.description}</p>
                 <div>
                     <button onClick={()=> addToCart(item)}>
