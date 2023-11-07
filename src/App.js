@@ -23,9 +23,6 @@ function App() {
          cartItems[i].quantity = 1;
        }
      }
-     else{
-       return
-     }
   }
 
   const addToCart = (item) => {
