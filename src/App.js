@@ -16,29 +16,16 @@ function App() {
     console.log(cartItems)
   }, [cartItems]);
 
-
-   const addQuantity = ()=>{
-     if (cartItems.quantity === undefined) {
-       for (let i = 0; i < cartItems.length; i++) {
-         cartItems[i].quantity = 1;
-       }
-     }
-  }
-
   const addToCart = (item) => {
     let isInArray = false
     cartItems.forEach(el =>{
       if (el.id === item.id)
         isInArray = true
     })
+    //добавил вот
     if (!isInArray){
-    setCartItems([...cartItems, item])
+    setCartItems([...cartItems, {id:item.id , ibu:item.ibu, name:item.name, quantity: 1}])
   }};
-
-  useEffect(() => {
-    addQuantity()
-  }, [addToCart]);
-
   useEffect(() => {
     const savedCart = localStorage.getItem('cartItems');
     if (savedCart){
@@ -61,6 +48,9 @@ function App() {
           setProduct(product);
         })
   }, []);
+
+
+
 
   return (
     <div>

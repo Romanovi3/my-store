@@ -26,7 +26,6 @@ const Store = ({product , addToCart, cartItems}) => {
                 setCurrentProduct(product)
             }
         }
-
     return (
         <div>
             <div>
