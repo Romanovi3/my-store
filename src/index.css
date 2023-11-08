@@ -236,6 +236,7 @@ footer{
   border-radius: 10px;
   transition: all 500ms;
   border: 1px solid #e0a317;
+  background: transparent;
   color: #000;
   font-size:15px;
   cursor: pointer;
