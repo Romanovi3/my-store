@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import StoreItem from "./StoreItem";
-import Categories from "./Categories";
-import ModalProduct from "./ModalProduct";
+import StoreItem from "../StoreItem/StoreItem";
+import Categories from "../Categories/Categories";
+import ModalProduct from "../ModalProduct/ModalProduct";
+
 
 
 const Store = ({product , addToCart, cartItems}) => {
@@ -14,18 +15,37 @@ const Store = ({product , addToCart, cartItems}) => {
         setCurrentProduct(product)
         console.log (product)
     }, [product]);
+
+
     const showModal =(item)=>{
         setModalItem(modalItem = item)
         setShowFull( showFull = !showFull)
     }
-        const filterProduct =(category)=>{
-            setCurrentProduct(
-                 product.filter(el=>el.category === category)
-            )
-            if (category === 'all') {
+
+    const setCategory =()=>{
+        currentProduct.forEach(el=>{
+            if (el.abv <= 5) {
+                el.category = 'lite'
+            }
+            else if (el.abv < 10 && el.category !== ''){
+                el.category = 'medium'
+            }
+            else if (el.abv < 30 && el.category !== ''){
+                el.category = 'strong'
+            }
+            else{
+                el.category = 'hell'
+            }
+        })}
+
+        const filterProduct =(category)=> {
+            setCategory()
+            setCurrentProduct( product.filter(el=>el.category === category))
+            if (category === 'all'){
                 setCurrentProduct(product)
             }
         }
+
     return (
         <div>
             <div>

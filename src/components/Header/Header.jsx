@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { PiBasketLight } from "react-icons/pi";
-import Basket from "./Basket";
+import Basket from "../Basket/Basket";
 
 
 

@@ -80,17 +80,17 @@ main{
 main:after{
   content: 'Лучшие пива млечного пути!';
   color: #e0a317;
-  font-size: 70px;
+  font-size: 4rem;
   font-family: inherit;
   position: absolute;
   top: 55%;
   left: 3%;
-  width: 80%;
+  width: 90%;
 }
 main:before{
   content: 'Забирай скорей';
   color: #fff;
-  font-size: 40px;
+  font-size: 3rem;
   position: absolute;
   top: 68%;
   left: 10%;
@@ -120,7 +120,7 @@ footer{
 }
 .store{
   display: flex;
-  margin:0 10% 10% 10%;
+  margin:0 0 10% 0;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -133,7 +133,7 @@ footer{
   font-size: 20px;
 }
 .storeItem {
-  width: 400px;
+  width: 350px;
   height:300px;
   border-radius: 30px;
   padding:25px;
@@ -147,7 +147,8 @@ footer{
 }
 .storeItem__block p{
   overflow: hidden;
-  height: 111px;
+  height: 87px;
+  font-size: 14px;
 }
 .imgBlock{
   height: 100%;
@@ -164,9 +165,11 @@ footer{
 }
 .storeItem h2 , .storeItem h3{
   margin-bottom:10px;
+  font-size: 18px;
 }
 .storeItem h3{
   color: #a21c1c;
+  font-size: 16px;
 }
 .storeItem button{
   margin-top:20px;
@@ -228,7 +231,7 @@ footer{
 }
 .modalBlock__tips{
   font-style: italic;
-  color: #a21c1c;
+  color: #7b0404;
 }
 .modalBlock__info button{
   width: 200px;
@@ -250,8 +253,8 @@ footer{
   padding: 10px;
   color: #000;
   border: none;
-  top: 1%;
-  left: 94%;
+  top: 2%;
+  left: 90%;
   z-index: 1;
   cursor: pointer;
   font-size: 20px;
@@ -279,9 +282,26 @@ footer{
   justify-content: space-between;
   margin: 10px 60px 10px 50px;
 }
+.cartBlock__value{
+  width: 82%;
+  display: flex;
+  align-items: center;
+}
+.cartBlock__value img{
+  width: 10%;
+  height: 80px;
+  margin-right: 10%;
+}
+
 .cartBlock h2{
   display: block;
   text-align: left;
+  font-size: 15px;
+  color: #a21c1c;
+}
+.cartBlock h3{
+  display: inline;
+  font-size: 15px;
 }
 .cartBlock p{
   text-align: left;
@@ -371,11 +391,11 @@ footer{
 .aboutUs__info h1{
   margin: 10px 0 25px 0   ;
   color: #e0a317;
-  font-size: 32px;
+  font-size: 30px;
   text-align: center;
 }
 .aboutUs__info p{
-  font-size: 30px;
+  font-size: 28px;
   width:65%;
   margin: 15px;
 }
@@ -398,5 +418,57 @@ footer{
   display: inline;
   margin:5px 15px 5px 5px;
 }
-
+@media (max-width: 1400px) {
+  main{
+    height: 620px;
+  }
+  .categories{
+    width: 60%;
+    margin:0 25%;
+  }
+  .categories h3{
+    font-size: 17px;
+  }
+  .storeItem{
+    width: 285px;
+    height: 260px;
+  }
+  .store h2, .store h3{
+    font-size: 14px;
+  }
+  .storeItem__block p{
+    font-size: 12px;
+    height: 105px;
+  }
+  .storeItem button{
+    margin-top:10px;
+    padding: 10px;
+    font-size: 10px;
+  }
+  .imgBlock img{
+    width: 70%;
+    height: 80%;
+    margin-top: 20%;
+  }
+  .imgBlock img:hover{
+    transform: scale(1.2);
+  }
+  .modalBlock__info h3{
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .modalBlock__info p{
+    font-size: 13px;
+  }
+  .aboutUs{
+    margin: 14%;
+  }
+  .aboutUs__info h1 {
+    margin: 0 0 5px 0;
+    font-size: 25px;
+  }
+  .aboutUs__info p{
+    font-size: 20px;
+  }
+}
 
