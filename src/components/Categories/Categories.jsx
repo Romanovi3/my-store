@@ -8,20 +8,20 @@ const Categories = ({filterProduct}) => {
             name: 'Всё'
         },
         {
-            category: 'light',
-            name: 'Светлое'
+            category: 'lite',
+            name: 'Легкое',
         },
         {
-            category: 'dark',
-            name: 'Темное'
+            category: 'medium',
+            name: 'Средненькое',
         },
         {
             category: 'strong',
-            name: 'Крепкое'
+            name: 'Крепкое',
         },
         {
-            category: 'wine',
-            name: 'Вино'
+            category: 'hell',
+            name: 'Полный отвал',
         }
     ]
     return (

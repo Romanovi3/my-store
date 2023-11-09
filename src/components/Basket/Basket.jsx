@@ -8,8 +8,11 @@ const Basket = ({cartItems , setCartItems}) => {
         setCartItems(cartItems.filter((item) => item !== itemToRemove))
     };
 
+
     const calculateTotal = () => {
         return cartItems.reduce((total, item) => total + item.ibu * item.quantity, 0);}
+
+
     const handleIncrease = (item) =>{
         setCartItems(cartItems.map((el)=> {
                 if (item.id === el.id){
@@ -19,6 +22,8 @@ const Basket = ({cartItems , setCartItems}) => {
             }
         ))
     }
+
+
     const handleDecrease = (item) =>{
         setCartItems(cartItems.map((el)=> {
                 if (item.id === el.id){
@@ -38,9 +43,13 @@ const Basket = ({cartItems , setCartItems}) => {
             {cartItems.length > 0 && cartItems.map((item)=>(
                 <div key={item.id}>
                     <div className='cartBlock'>
-                        <div>
-                            <h2>{item.name} - {item.quantity}шт.</h2>
-                            <p>{item.ibu} $.</p>
+                        <div className='cartBlock__value'>
+                            <img src={item.image} alt="mda"/>
+                            <section>
+                                <h2>{item.name} - {item.quantity}шт.</h2>
+                                <p>{item.ibu} $.</p>
+                            </section>
+
                         </div>
                         <div className='cartBtns'>
                             <button onClick={()=> handleIncrease(item)}>+</button>
