@@ -1,3 +1,4 @@
+import './Store.css'
 import React, {useEffect, useState} from 'react';
 import StoreItem from "../StoreItem/StoreItem";
 import Categories from "../Categories/Categories";

@@ -1,0 +1,16 @@
+footer{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact h3{
+    margin: 0;
+}
+.contact__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact__icons p {
+    display: inline;
+    margin:5px 15px 5px 5px;
+}

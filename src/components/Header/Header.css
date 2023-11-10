@@ -1,0 +1,48 @@
+header{
+    display: flex;
+    padding: 25px 10%;
+    justify-content: space-between;
+    align-items: center;
+    width: 99vw;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000;
+    background: #fff;
+}
+.stick{
+    background: red;
+}
+.headerNav {
+    flex: 1;
+    text-align: right;
+}
+.basketIcon{
+    cursor: pointer;
+    transition:color,  transform 500ms ease;
+    height: 50px;
+    width: 25px;
+}
+.basketIcon:hover , .basketIcon.active{
+    color: rgba(222, 48, 68, 0.76);
+    transform: scale(1.5);
+}
+header ul{
+    list-style: none;
+}
+header li{
+    display: inline;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 600ms ease;
+    font-size: 20px;
+    border-bottom:1px solid transparent;
+}
+
+header li:hover, header li:focus{
+    border-color:#e0a317;
+}
+header a:visited , :focus , :active , :-webkit-any-link{
+    text-decoration: none;
+    color:inherit;
+}

@@ -1,3 +1,4 @@
+import './Basket.css'
 import React from 'react';
 import { FaRegTrashCan } from "react-icons/fa6";
 

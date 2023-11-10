@@ -1,0 +1,98 @@
+.shopCart{
+    background: antiquewhite;
+    text-align: center;
+    padding:40px 20px;
+    color: black;
+    z-index: 1000;
+    width:650px;
+    height: fit-content;
+    min-height: 270px;
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 8px 3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 3px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 3px rgba(34, 60, 80, 0.2);
+    position: absolute;
+    right: 10%;
+    top: 80%;
+}
+.cartBlock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 60px 10px 50px;
+}
+.cartBlock__value{
+    width: 82%;
+    display: flex;
+    align-items: center;
+}
+.cartBlock__value img{
+    width: 10%;
+    height: 80px;
+    margin-right: 10%;
+}
+
+.cartBlock h2{
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    color: #a21c1c;
+}
+.cartBlock h3{
+    display: inline;
+    font-size: 15px;
+}
+.cartBlock p{
+    text-align: left;
+}
+.cartBtns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.cartBtns button{
+    transition: all 1s ease;
+}
+.cartBtns button:hover{
+    transform: scale(1.1);
+}
+.cartBtns button:first-child{
+    margin-left: 20%;
+}
+.cartBtns button:first-child:hover{
+    background: #49ea49;
+}
+.cartBtns button:nth-child(2):hover{
+    background: rgba(227, 44, 94, 0.93);
+}
+.cartBtns button:nth-last-child(2){
+    margin-right: 20%;
+}
+.cartBlock button{
+    border: none;
+    padding:5px 10px;
+    background: #e0a317;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.totalCart{
+    font-size: 20px;
+    margin-top:30px;
+    text-decoration: red underline;
+}
+.trash{
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 500ms ease;
+}
+.trash:hover{
+    color: #a21c1c;
+}
+
+.emptyCart{
+    font-size: 30px;
+    color: #ef1010;
+    text-shadow: 1px 1px black;
+    margin:15%;
+}

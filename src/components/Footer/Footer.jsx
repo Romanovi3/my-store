@@ -1,3 +1,4 @@
+import './Footer.css'
 import React from 'react';
 import {LiaTelegram} from "react-icons/lia";
 import {MdOutlineWhatsapp} from "react-icons/md";

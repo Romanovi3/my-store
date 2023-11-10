@@ -1,0 +1,30 @@
+main{
+    height: 700px;
+    margin:150px 100px;
+    background: url('/public/img/beerbg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+main:after{
+    content: 'Лучшие пива млечного пути!';
+    color: #e0a317;
+    font-size: 4rem;
+    font-family: inherit;
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    width: 90%;
+}
+main:before{
+    content: 'Забирай скорей';
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    top: 68%;
+    left: 10%;
+}
+@media (max-width: 1520px) {
+    main{
+        height: 620px;
+    }
+}

@@ -1,3 +1,4 @@
+import './Header.css'
 import React, {useState} from 'react';
 import { PiBasketLight } from "react-icons/pi";
 import Basket from "../Basket/Basket";

@@ -1,3 +1,4 @@
+import './ModalProduct.css'
 import React from 'react';
 
 const ModalProduct = ({showModal, modalItem, addToCart}) => {

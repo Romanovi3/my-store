@@ -1,3 +1,4 @@
+import './StoreItem.css'
 import React from 'react';
 
 const StoreItem = ({addToCart, item, showModal}) => {

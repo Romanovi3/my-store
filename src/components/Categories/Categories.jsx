@@ -1,3 +1,4 @@
+import './Categories.css'
 import React from 'react';
 
 const Categories = ({filterProduct}) => {

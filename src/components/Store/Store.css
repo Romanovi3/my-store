@@ -1,0 +1,14 @@
+.store{
+    display: flex;
+    margin:0 0 10% 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.store h2{
+    text-align: left;
+    text-decoration: underline;
+    color: #e0a317;
+    font-size: 20px;
+}
